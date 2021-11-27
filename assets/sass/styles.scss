@@ -1,0 +1,112 @@
+$naranja :hsl(31, 77%, 52%);
+$azulflojo : hsl(184, 100%, 22%);
+$azulfuerte : hsl(179, 100%, 13%);
+$blanco : hsl(0, 0%, 95%);
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-size: 15px;
+border:none;
+
+
+
+img {width:4rem;max-width:100%; height: auto;
+    margin: 1rem 0.5rem 2rem 1rem;};
+
+.parent {
+    position:relative;
+    background-color: $blanco;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+   justify-items:center;
+   align-content:center;
+    width: 100%;
+    height:100vh;
+    max-height:100%;
+.blocks {
+    display:flex;
+    width: 65vw;
+    height: 70vh;
+    justify-content:center;
+    align-content:center;
+    justify-items: center;
+    place-self: center;
+    .son {
+        padding: 1rem 0.5rem 2rem 1rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        h1 {
+            color:$blanco; 
+            padding: 1rem 0.5rem 2rem 1rem;
+            font-size:2.5rem;
+            text-transform:uppercase;
+            font-family: 'Big Shoulders Display', cursive;};
+        button {
+            background-color: $blanco;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            align-self:center;
+            justify-self:end;
+            width:8rem;}
+         p {
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Lexend Deca', sans-serif;padding: 1rem 0.5rem 2rem 1rem;
+        };
+    };
+
+    #sedans_block{
+
+        background-color: $naranja;
+
+        button {
+            color: $naranja;
+        };
+        
+        border-radius:0.5rem 0 0 0.5rem;
+
+};  #suvs_block {
+    background-color: $azulflojo;
+    button{color:$azulflojo;};
+};  #luxury_block {
+    background-color: $azulfuerte;
+    button {color:$azulfuerte};
+    border-radius: 0 0.5rem 0.5rem 0;
+};
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    text-align:center;
+    place-self:center;
+}
+};
+
+};
+
+@media screen and (max-width:800px) {
+    * {font-size:13px;
+        p{
+    padding: 2rem 1rem;}
+    };
+};
+
+@media screen and (max-width:450px) {
+    * {
+    .parent {
+        height:200vh;
+    .blocks {flex-direction:column;};
+
+    #sedans_block {border-radius:0.5rem 0.5rem 0 0;};
+
+    #luxury_block {border-radius:0 0 0.5rem 0.5rem;};
+    };
+    
+};
+    
+.attribution { font-size: 11px; text-align: center; };
+.attribution a { color: hsl(228, 45%, 44%); };
+};

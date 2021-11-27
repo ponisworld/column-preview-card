@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+}
+* img {
+  width: 4rem;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0.5rem 2rem 1rem;
+}
+* .parent {
+  position: relative;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+}
+* .parent .blocks {
+  display: flex;
+  width: 65vw;
+  height: 70vh;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  place-self: center;
+}
+* .parent .blocks .son {
+  padding: 1rem 0.5rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* .parent .blocks .son h1 {
+  color: #f2f2f2;
+  padding: 1rem 0.5rem 2rem 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+}
+* .parent .blocks .son button {
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  align-self: center;
+  justify-self: end;
+  width: 8rem;
+}
+* .parent .blocks .son p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 0.5rem 2rem 1rem;
+}
+* .parent .blocks #sedans_block {
+  background-color: #e38826;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+* .parent .blocks #sedans_block button {
+  color: #e38826;
+}
+* .parent .blocks #suvs_block {
+  background-color: #006970;
+}
+* .parent .blocks #suvs_block button {
+  color: #006970;
+}
+* .parent .blocks #luxury_block {
+  background-color: #004241;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+* .parent .blocks #luxury_block button {
+  color: #004241;
+}
+* .parent footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  place-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 13px;
+  }
+  * p {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  * .parent {
+    height: 200vh;
+  }
+  * .parent .blocks {
+    flex-direction: column;
+  }
+  * .parent #sedans_block {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  * .parent #luxury_block {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: #3e52a3;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
