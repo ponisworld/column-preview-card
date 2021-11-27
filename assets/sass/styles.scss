@@ -95,17 +95,17 @@ footer {
 };
 
 @media screen and (max-width:450px) {
-    * {
+    
     .parent {
         height:200vh;
-    .blocks {flex-direction:column;};
-
-    #sedans_block {border-radius:0.5rem 0.5rem 0 0;};
-
-    #luxury_block {border-radius:0 0 0.5rem 0.5rem;};
-    };
+        .blocks {flex-direction:column;
     
-};
+            #sedans_block {border-radius:0.5rem 0.5rem 0 0;};
+
+            #luxury_block {border-radius:0 0 0.5rem 0.5rem;};
+        }; 
+    
+;}
     
 .attribution { font-size: 11px; text-align: center; };
 .attribution a { color: hsl(228, 45%, 44%); };
