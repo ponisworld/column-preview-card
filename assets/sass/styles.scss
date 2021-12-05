@@ -46,9 +46,10 @@ img {width:4rem;max-width:100%; height: auto;
         button {
             background-color: $blanco;
             padding: 0.5rem 1rem;
+            margin-top:2rem;
             border-radius: 1rem;
             font-weight: 600;
-            align-self:center;
+            align-self:start;
             justify-self:end;
             width:8rem;}
          p {
@@ -87,14 +88,20 @@ footer {
 
 };
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     * {font-size:13px;
+
+
         p{
-    padding: 2rem 1rem;}
+    padding: 2rem 1rem 0 1rem;}
+
+
     };
+
+    button {margin-top:0;}
 };
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:500px) {
     
     .parent {
         height:200vh;
