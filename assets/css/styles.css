@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
 }
-* .parent .blocks .son h1 {
+* .parent .blocks .son h2 {
   color: #f2f2f2;
   padding: 1rem 0.5rem 2rem 1rem;
   font-size: 2.5rem;
